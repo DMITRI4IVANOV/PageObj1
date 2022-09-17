@@ -20,7 +20,7 @@ class MoneyTransferTest {
   }
   @Test
   void shouldTransferMoneyBetweenOwnCards1() {
-    int value = 6000;
+    int value = 5000;
     var donorInfo = DataHelper.getSecondCartNumber();
 
     var dashboardPage = new DashboardPage();
@@ -37,7 +37,7 @@ class MoneyTransferTest {
 
   @Test
   void shouldTransferMoneyBetweenOwnCards2() {
-    int value = 6000;
+    int value = 5000;
     var donorInfo = DataHelper.getFirstCartNumber();
 
     var dashboardPage = new DashboardPage();
@@ -54,7 +54,7 @@ class MoneyTransferTest {
 
   @Test
   void shouldTransferMoneyBetweenOwnCardsNoValid() {
-    int value = 15000;
+    int value = 21000;
     var donorInfo = DataHelper.getFirstCartNumber();
 
     var dashboardPage = new DashboardPage();
