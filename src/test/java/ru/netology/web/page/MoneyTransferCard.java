@@ -19,7 +19,7 @@ public class MoneyTransferCard {
     transferButton.click();
     return new DashboardPage();
   }
-  public void messageError() {
-    errorMessage.shouldHave(exactText("Недостаточно средств на счете")).shouldBe(visible);
-  }
+//  public void messageError() {
+//    errorMessage.shouldHave(exactText("Недостаточно средств на счете")).shouldBe(visible);
+//  }
 }

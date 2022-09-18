@@ -66,8 +66,8 @@ class MoneyTransferTest {
     int secondBalanceFirstCard = dashboardPage.getCardBalance("0");
     int secondBalanceSecondCard = dashboardPage.getCardBalance("1");
 
-    var moneyTransferCard = new MoneyTransferCard();
-    moneyTransferCard.messageError();
+    assertEquals(secondBalanceFirstCard, firstBalanceFirstCard - value);
+    assertEquals(secondBalanceSecondCard, firstBalanceSecondCard + value);
   }
 
 }
